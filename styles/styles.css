@@ -6,11 +6,28 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+li {
+    margin-right: 1rem;
+}
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-top: 10rem;
 }
 
 h1 {
@@ -38,4 +55,11 @@ input[type="submit"] {
     margin-top: 1rem;
     width: 8rem;
     height: 2rem;
+    font-weight: bold;
+    border: 1px solid lightgrey;
+}
+
+input[value="Advanced Search"] {
+    background-color: cornflowerblue;
+    width: 10rem;
 }
