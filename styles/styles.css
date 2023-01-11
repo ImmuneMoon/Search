@@ -20,6 +20,10 @@ li {
     margin-right: 1rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -49,6 +53,42 @@ input[name="q"] {
     width: 20rem;
     text-indent: 1rem;
     border: 2px solid lightgrey;
+}
+
+#adv_form {
+    display: flex;
+    width: max-content;
+    align-items:flex-end;
+}
+
+h2 {
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.adv_opt {
+    display: flex;
+    justify-content: left;
+    margin: .5rem 0;
+    align-items: center;
+}
+
+label {
+    width: 11rem;
+    margin-right: 1rem;
+    text-align: start;
+    font-size: 1rem;
+}
+
+input[name="all"], 
+input[name="exact"], 
+input[name="any"], 
+input[name="none"]{
+    width: 30rem;
+    height: 2rem;
+    font-size: 1rem;
+    text-indent: .5rem;
 }
 
 input[type="submit"] {
