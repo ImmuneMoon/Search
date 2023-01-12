@@ -11,34 +11,42 @@
                 <li><a href="./image.html">Images</a></li>
             </ul>
         </header>
-        <main>
-            <h1>
+        <main id="adv_main">
+            <h1 id="adv_h1">
                 <font color="cornflowerblue">C</font>
                 <font color="red">S</font>
                 <font color="orange">5</font>
                 <font color="cornflowerblue">0</font>
             </h1>
-            <form id="adv_form" action="https://www.google.com/advanced_search">
-                <h2>Find Pages with...</h2>
-                
-                <div class="adv_opt">
-                    <label for="all">all these words:</label>
-                    <input type="text" name="all">
-                </div>
-                <div class="adv_opt">
-                    <label for="exact">this exact word or phrase:</label>
-                    <input type="text" name="exact">
-                </div>
-                <div class="adv_opt">
-                    <label for="any">any of these words:</label>
-                    <input type="text" name="any">
-                </div>
-                <div class="adv_opt">
-                    <label for="none">none of these words:</label>
-                    <input type="text" name="none">
-                </div>
-                <input type="submit" value="Advanced Search">
-            </form>
+            <div id="adv_form_head">
+                <h3>
+                    Advanced Search
+                </h3>
+                <div id="line"></div>
+            </div>
+            <div id="adv_container">
+                <form id="adv_form" action="https://www.google.com/search" method="get">
+                    <h2>Find Pages with...</h2>
+                    
+                    <div class="adv_opt">
+                        <label for="all">all these words:</label>
+                        <input type="text" name="all">
+                    </div>
+                    <div class="adv_opt">
+                        <label for="exact">this exact word or phrase:</label>
+                        <input type="text" name="exact">
+                    </div>
+                    <div class="adv_opt">
+                        <label for="any">any of these words:</label>
+                        <input type="text" name="any">
+                    </div>
+                    <div class="adv_opt">
+                        <label for="none">none of these words:</label>
+                        <input type="text" name="none">
+                    </div>
+                    <input type="submit" value="Advanced Search">
+                </form>
+            </div>
         </main>
     </body>
 </html>
