@@ -24,6 +24,7 @@ li {
 
 a {
     text-decoration: none;
+    font-size: small;
 }
 
 main {
@@ -33,11 +34,15 @@ main {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 7rem;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 4rem;
+}
+
+.c {
+    font-size: 5rem;
 }
 
 form {
@@ -50,11 +55,21 @@ form {
 }
 
 input[name="q"] {
-    border-radius: 15px;
-    height: 2rem;
-    width: 20rem;
-    text-indent: 1rem;
+    border-radius: 20px;
+    height: 2.5rem;
+    width: 40rem;
+    text-indent: 1.5rem;
     border: 2px solid lightgrey;
+    font-size: 1rem;
+}
+
+#button_container {
+    display: flex;
+}
+
+input[value="Google Search"], input[value="I'm Feeling Lucky"] {
+    margin: 1rem;
+    width: fit-content;
 }
 
 #adv_main {
@@ -65,7 +80,11 @@ input[name="q"] {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    font-size: xx-large;
+    font-size: 1.5rem;
+}
+
+#adv_c {
+    font-size: 1.8rem;
 }
 
 #adv_form_head {
@@ -118,10 +137,10 @@ label {
     font-size: 1rem;
 }
 
-input[name="all"], 
-input[name="exact"], 
-input[name="any"], 
-input[name="none"]{
+input[name="as_q"], 
+input[name="as_epq"], 
+input[name="as_oq"], 
+input[name="as_eq"]{
     width: 40rem;
     height: 2rem;
     font-size: 1rem;
@@ -129,11 +148,16 @@ input[name="none"]{
 }
 
 input[type="submit"] {
-    margin-top: 1rem;
-    width: 8rem;
-    height: 2rem;
+    margin-top: 3.5rem;
+    padding: 0 1rem;
+    width: 9rem;
+    height: 2.25rem;
     font-weight: bold;
     border: 1px solid lightgrey;
+}
+
+input[value="I'm Feeling Lucky"] {
+    width: 10rem;
 }
 
 input[value="Advanced Search"] {
